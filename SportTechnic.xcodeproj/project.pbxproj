@@ -13,6 +13,12 @@
 		21DB4594247F287D007A8C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DB4592247F287D007A8C4F /* Main.storyboard */; };
 		21DB4596247F287E007A8C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DB4595247F287E007A8C4F /* Assets.xcassets */; };
 		21DB4599247F287E007A8C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DB4597247F287E007A8C4F /* LaunchScreen.storyboard */; };
+		E50CD2FE248712170015E6A0 /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD2FD248712170015E6A0 /* LOGO.png */; };
+		E50CD303248713010015E6A0 /* legs.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD2FF248712FF0015E6A0 /* legs.png */; };
+		E50CD304248713010015E6A0 /* abs.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD300248713000015E6A0 /* abs.png */; };
+		E50CD305248713010015E6A0 /* cardio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E50CD301248713000015E6A0 /* cardio.jpg */; };
+		E50CD306248713010015E6A0 /* arm.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD302248713010015E6A0 /* arm.png */; };
+		E50CD308248718230015E6A0 /* EjerciciosEspecificosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CD307248718230015E6A0 /* EjerciciosEspecificosVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		21DB4595247F287E007A8C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DB4598247F287E007A8C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DB459A247F287E007A8C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50CD2FD248712170015E6A0 /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO.png; sourceTree = "<group>"; };
+		E50CD2FF248712FF0015E6A0 /* legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legs.png; sourceTree = "<group>"; };
+		E50CD300248713000015E6A0 /* abs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abs.png; sourceTree = "<group>"; };
+		E50CD301248713000015E6A0 /* cardio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cardio.jpg; sourceTree = "<group>"; };
+		E50CD302248713010015E6A0 /* arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arm.png; sourceTree = "<group>"; };
+		E50CD307248718230015E6A0 /* EjerciciosEspecificosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosEspecificosVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,15 @@
 		21DB458B247F287D007A8C4F /* SportTechnic */ = {
 			isa = PBXGroup;
 			children = (
+				E50CD2FD248712170015E6A0 /* LOGO.png */,
+				E50CD300248713000015E6A0 /* abs.png */,
+				E50CD302248713010015E6A0 /* arm.png */,
+				E50CD301248713000015E6A0 /* cardio.jpg */,
+				E50CD2FF248712FF0015E6A0 /* legs.png */,
 				21DB458C247F287D007A8C4F /* AppDelegate.swift */,
 				21DB458E247F287D007A8C4F /* SceneDelegate.swift */,
 				21DB4590247F287D007A8C4F /* ViewController.swift */,
+				E50CD307248718230015E6A0 /* EjerciciosEspecificosVC.swift */,
 				21DB4592247F287D007A8C4F /* Main.storyboard */,
 				21DB4595247F287E007A8C4F /* Assets.xcassets */,
 				21DB4597247F287E007A8C4F /* LaunchScreen.storyboard */,
@@ -125,6 +143,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50CD305248713010015E6A0 /* cardio.jpg in Resources */,
+				E50CD304248713010015E6A0 /* abs.png in Resources */,
+				E50CD306248713010015E6A0 /* arm.png in Resources */,
+				E50CD2FE248712170015E6A0 /* LOGO.png in Resources */,
+				E50CD303248713010015E6A0 /* legs.png in Resources */,
 				21DB4599247F287E007A8C4F /* LaunchScreen.storyboard in Resources */,
 				21DB4596247F287E007A8C4F /* Assets.xcassets in Resources */,
 				21DB4594247F287D007A8C4F /* Main.storyboard in Resources */,
@@ -140,6 +163,7 @@
 			files = (
 				21DB4591247F287D007A8C4F /* ViewController.swift in Sources */,
 				21DB458D247F287D007A8C4F /* AppDelegate.swift in Sources */,
+				E50CD308248718230015E6A0 /* EjerciciosEspecificosVC.swift in Sources */,
 				21DB458F247F287D007A8C4F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
