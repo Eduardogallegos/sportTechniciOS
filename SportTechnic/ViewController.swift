@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tabla: UITableView!
     
     let arrImgGrupos = ["arm.png", "legs.png", "abs.png", "cardio.jpg"]
-    let arrNomGrupos = ["Brazo", "Pierna", "Abdomen", "Cardio"]
+    let arrNomGrupos = ["BRAZO", "PIERNA", "ABDOMEN", "CARDIO"]
 
         override func viewDidLoad() {
             super.viewDidLoad()
