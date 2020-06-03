@@ -19,6 +19,8 @@
 		E50CD305248713010015E6A0 /* cardio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E50CD301248713000015E6A0 /* cardio.jpg */; };
 		E50CD306248713010015E6A0 /* arm.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD302248713010015E6A0 /* arm.png */; };
 		E50CD308248718230015E6A0 /* EjerciciosEspecificosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CD307248718230015E6A0 /* EjerciciosEspecificosVC.swift */; };
+		E50CD30A248736800015E6A0 /* lagartija_lateral.MOV in Resources */ = {isa = PBXBuildFile; fileRef = E50CD3092487367F0015E6A0 /* lagartija_lateral.MOV */; };
+		E50CD30C24873AD10015E6A0 /* sent_2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = E50CD30B24873AD10015E6A0 /* sent_2.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E50CD301248713000015E6A0 /* cardio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cardio.jpg; sourceTree = "<group>"; };
 		E50CD302248713010015E6A0 /* arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arm.png; sourceTree = "<group>"; };
 		E50CD307248718230015E6A0 /* EjerciciosEspecificosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjerciciosEspecificosVC.swift; sourceTree = "<group>"; };
+		E50CD3092487367F0015E6A0 /* lagartija_lateral.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = lagartija_lateral.MOV; sourceTree = "<group>"; };
+		E50CD30B24873AD10015E6A0 /* sent_2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sent_2.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		21DB458B247F287D007A8C4F /* SportTechnic */ = {
 			isa = PBXGroup;
 			children = (
+				E50CD30B24873AD10015E6A0 /* sent_2.MOV */,
+				E50CD3092487367F0015E6A0 /* lagartija_lateral.MOV */,
 				E50CD2FD248712170015E6A0 /* LOGO.png */,
 				E50CD300248713000015E6A0 /* abs.png */,
 				E50CD302248713010015E6A0 /* arm.png */,
@@ -150,7 +156,9 @@
 				E50CD303248713010015E6A0 /* legs.png in Resources */,
 				21DB4599247F287E007A8C4F /* LaunchScreen.storyboard in Resources */,
 				21DB4596247F287E007A8C4F /* Assets.xcassets in Resources */,
+				E50CD30A248736800015E6A0 /* lagartija_lateral.MOV in Resources */,
 				21DB4594247F287D007A8C4F /* Main.storyboard in Resources */,
+				E50CD30C24873AD10015E6A0 /* sent_2.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
