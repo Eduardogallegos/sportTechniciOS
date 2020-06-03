@@ -285,35 +285,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qIP-LS-m8g">
-                                <rect key="frame" x="40" y="457.5" width="334" height="100.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yct-pd-7aL">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-dZ-pHS">
-                                        <rect key="frame" x="0.0" y="30" width="334" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-zD-pbn">
-                                        <rect key="frame" x="0.0" y="50.5" width="334" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rZj-YM-SY5"/>
-                                        </constraints>
-                                        <state key="normal" title="TUTORIAL"/>
-                                        <connections>
-                                            <action selector="Btn2:" destination="7Sj-lx-Yxh" eventType="touchUpInside" id="Hhp-Al-QSX"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpc-NF-YpH">
-                                <rect key="frame" x="40" y="212" width="334" height="100.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Gpc-NF-YpH">
+                                <rect key="frame" x="40" y="142" width="334" height="160.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqO-v7-6SF">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
@@ -322,19 +295,46 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW6-QP-1hZ">
-                                        <rect key="frame" x="0.0" y="30" width="334" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="60" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYu-bl-zhz">
-                                        <rect key="frame" x="0.0" y="50.5" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="INn-uh-9uY"/>
                                         </constraints>
                                         <state key="normal" title="TUTORIAL"/>
                                         <connections>
                                             <action selector="Btn1:" destination="7Sj-lx-Yxh" eventType="touchUpInside" id="izh-1Q-xWk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qIP-LS-m8g">
+                                <rect key="frame" x="40" y="466" width="334" height="160.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yct-pd-7aL">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-dZ-pHS">
+                                        <rect key="frame" x="0.0" y="60" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-zD-pbn">
+                                        <rect key="frame" x="0.0" y="110.5" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rZj-YM-SY5"/>
+                                        </constraints>
+                                        <state key="normal" title="TUTORIAL"/>
+                                        <connections>
+                                            <action selector="Btn2:" destination="7Sj-lx-Yxh" eventType="touchUpInside" id="Hhp-Al-QSX"/>
                                         </connections>
                                     </button>
                                 </subviews>
