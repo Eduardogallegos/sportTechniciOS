@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class StartVC: UIViewController {
 
+
+    @IBOutlet weak var VideoView: UIView!
     
     @IBOutlet weak var singUpBtn: UIButton!
     
@@ -19,8 +23,11 @@ class StartVC: UIViewController {
         super.viewDidLoad()
 
         setUpElements()
+        setUpView()
+       
     }
            
+
     func setUpElements(){
                
     // STYLE ELEMENTS
@@ -28,7 +35,27 @@ class StartVC: UIViewController {
         Utilities.styleHollowButton(logInBtn)
     
 
-           } 
+           }
     
+    func setUpView() {
+        let path = URL(fileURLWithPath: Bundle.main.path(forResource: "intro", ofType: ".MOV")!)
+        let player = AVPlayer(url: path)
+        
+        let newLayer = AVPlayerLayer(player: player)
+        newLayer.frame = self.VideoView.frame
+        self.VideoView.layer.addSublayer(newLayer)
+        newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        
+       
+        
+        player.play()
+        player.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
+        
+        
+    
+
+    }
+   
+
 
 }
