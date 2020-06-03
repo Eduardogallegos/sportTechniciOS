@@ -1,0 +1,6 @@
+framework module Pods_SportTechnic {
+  umbrella header "Pods-SportTechnic-umbrella.h"
+
+  export *
+  module * { export * }
+}
