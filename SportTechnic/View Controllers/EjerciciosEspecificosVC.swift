@@ -26,9 +26,22 @@ class EjerciciosEspecificosVC: UIViewController {
     // DESCRIPCIÓN EJERCICIO 1
     @IBOutlet weak var Descripcion2: UILabel!
     
+    // BTN TUROTIAL 1
     @IBOutlet weak var tutorial1: UIButton!
     
+    // BTN TUROTIAL 2
     @IBOutlet weak var tutorial2: UIButton!
+    
+    // BTN ABRIR CAMARA 1 Y ENTRAR GALERIA 1
+    @IBOutlet weak var BtnCamara1: UIButton!
+    
+    @IBOutlet weak var BtnGaleria1: UIButton!
+    
+    // BTN ABRIR CAMARA 2 Y ENTRAR GALERIA 2
+    @IBOutlet weak var BtnCamara2: UIButton!
+    
+    @IBOutlet weak var BtnGaleria2: UIButton!
+    
     
     var nombreGrupo: String = ""
     
@@ -43,34 +56,34 @@ class EjerciciosEspecificosVC: UIViewController {
         // PONE NOMBRE Y DESCRIPCIÓN DE ACUERDO A CLICK
         if nombreGrupo == "BRAZO"{
             NombreEx.text = "Lagartijas"
-            Descripcion.text = "Acuéstate boca abajo..."
+            Descripcion.text = "Haz click en el tutorial y aprende"
             
             NombreEx2.text = "Fondos"
-            Descripcion2.text = "xdxd"
-            
+            Descripcion2.text = "Haz click en el tutorial y aprende"
+
         }else if nombreGrupo == "PIERNA"{
             NombreEx.text = "Sentadilla"
-            Descripcion.text = "hola"
+            Descripcion.text = "Haz click en el tutorial y aprende"
             
             NombreEx2.text = "Desplantes"
-            Descripcion2.text = "xdxd"
+            Descripcion2.text = "Haz click en el tutorial y aprende"
             
         }else if nombreGrupo == "ABDOMEN"{
         NombreEx.text = "Abdominales"
-        Descripcion.text = "hola"
+        Descripcion.text = "Haz click en el tutorial y aprende"
         
         NombreEx2.text = "Planchas"
-        Descripcion2.text = "xdxd"
+        Descripcion2.text = "Haz click en el tutorial y aprende"
             
         }else if nombreGrupo == "CARDIO"{
             NombreEx.text = "Burpees"
-            Descripcion.text = "hola"
+            Descripcion.text = "Haz click en el tutorial y aprende"
             
             NombreEx2.text = "Saltos de Cuerda"
-            Descripcion2.text = "xdxd"
+            Descripcion2.text = "Haz click en el tutorial y aprende"
         }
         
-        
+     
         setUpElements()
         
     }
@@ -80,6 +93,11 @@ class EjerciciosEspecificosVC: UIViewController {
        // STYLE ELEMENTS
            Utilities.styleFilledButton(tutorial1)
            Utilities.styleFilledButton(tutorial2)
+            
+        Utilities.styleHollowButton(BtnCamara1)
+        Utilities.styleHollowButton(BtnCamara2)
+        Utilities.styleHollowButton(BtnGaleria1)
+        Utilities.styleHollowButton(BtnGaleria2)
        
 
               }
@@ -200,8 +218,5 @@ class EjerciciosEspecificosVC: UIViewController {
                }
         
     }
-    
-
-
 
 }
