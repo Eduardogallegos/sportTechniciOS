@@ -126,7 +126,7 @@ class SingUpVC: UIViewController {
     }
     
     func transitionToMenu() {
-        let menuVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.MenuViewControler) as? ViewController
+        let menuVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.MenuViewControler) as? ViewController1
         
         view.window?.rootViewController = menuVC
         view.window?.makeKeyAndVisible()

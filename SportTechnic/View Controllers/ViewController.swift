@@ -1,56 +1,126 @@
-//
-//  ViewController.swift
-//  SportTechnic
-//
-//  Created by user168974 on 5/27/20.
-//  Copyright © 2020 SportTechnic. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
 
+Abstract:
+The implementation of the application's view controller, responsible for coordinating
+ the user interface, video feed, and PoseNet model.
+*/
+
+import AVFoundation
 import UIKit
+import VideoToolbox
 
 class ViewController: UIViewController {
+    /// The view the controller uses to visualize the detected poses.
+   
+    @IBOutlet weak var previewImageView: PoseImageView!
+    
+    private let videoCapture = VideoCapture()
 
-    @IBOutlet weak var tabla: UITableView!
-    
-    let arrImgGrupos = ["arm.png", "legs.png", "abs.png", "cardio.png"]
-    let arrNomGrupos = ["BRAZO", "PIERNA", "ABDOMEN", "CARDIO"]
+    private let poseNet = PoseNet()
 
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            // Do any additional setup after loading the view.
-            
+    /// The frame the PoseNet model is currently making pose predictions from.
+    private var currentFrame: CGImage?
+
+    /// The algorithm the controller uses to extract poses from the current frame.
+    private var algorithm: Algorithm = .multiple
+
+    /// The set of parameters passed to the pose builder when detecting poses.
+    private var poseBuilderConfiguration = PoseBuilderConfiguration()
+
+    private var popOverPresentationManager: PopOverPresentationManager?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // For convenience, the idle timer is disabled to prevent the screen from locking.
+        UIApplication.shared.isIdleTimerDisabled = true
+        poseNet.delegate = self
+        setupAndBeginCapturingVideoFrames()
+    }
+
+    private func setupAndBeginCapturingVideoFrames() {
+        videoCapture.setUpAVCapture { error in
+            if let error = error {
+                print("Failed to setup camera with error \(error)")
+                return
+            }
+
+            self.videoCapture.delegate = self
+
+            self.videoCapture.startCapturing()
         }
-    
-        // HAY UNA TRANSICION
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueEx"{
-            let vc = segue.destination as!  EjerciciosEspecificosVC// Controlador
-            let indice = tabla.indexPathForSelectedRow!.row
-            vc.nombreGrupo = arrNomGrupos[indice]
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        videoCapture.stopCapturing {
+            super.viewWillDisappear(animated)
         }
+    }
+
+    override func viewWillTransition(to size: CGSize,
+                                     with coordinator: UIViewControllerTransitionCoordinator) {
+        // Reinitilize the camera to update its output stream with the new orientation.
+        setupAndBeginCapturingVideoFrames()
+    }
+
+    @IBAction func onCameraButtonTapped(_ sender: Any) {
+        videoCapture.flipCamera { error in
+            if let error = error {
+                print("Failed to flip camera with error \(error)")
+            }
+        }
+    }
+
+    @IBAction func onAlgorithmSegmentValueChanged(_ sender: UISegmentedControl) {
+        guard let selectedAlgorithm = Algorithm(
+            rawValue: sender.selectedSegmentIndex) else {
+                return
+        }
+
+        algorithm = selectedAlgorithm
     }
 }
 
-        // Extension
-    extension ViewController: UITableViewDelegate, UITableViewDataSource{
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return arrImgGrupos.count
+
+
+// MARK: - VideoCaptureDelegate
+
+extension ViewController: VideoCaptureDelegate {
+    func videoCapture(_ videoCapture: VideoCapture, didCaptureFrame capturedImage: CGImage?) {
+        guard currentFrame == nil else {
+            return
         }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let celda = tableView.dequeueReusableCell(withIdentifier: "celdaGrupo", for: indexPath)
-            
-            celda.textLabel?.text = arrImgGrupos[indexPath.row]
-            celda.imageView?.image = UIImage(named: arrImgGrupos[indexPath.row])
-            
-            return celda
+        guard let image = capturedImage else {
+            fatalError("Captured image is null")
         }
-        
-        // CLICK SOBRE RENGLON
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            print( "click sobre: \(indexPath).row), \(arrImgGrupos[indexPath.row])")
-            
-        }
+
+        currentFrame = image
+        poseNet.predict(image)
+    }
 }
 
+// MARK: - PoseNetDelegate
+
+extension ViewController: PoseNetDelegate {
+    func poseNet(_ poseNet: PoseNet, didPredict predictions: PoseNetOutput) {
+        defer {
+            // Release `currentFrame` when exiting this method.
+            self.currentFrame = nil
+        }
+
+        guard let currentFrame = currentFrame else {
+            return
+        }
+
+        let poseBuilder = PoseBuilder(output: predictions,
+                                      configuration: poseBuilderConfiguration,
+                                      inputImage: currentFrame)
+
+        let poses = algorithm == .single
+            ? [poseBuilder.pose]
+            : poseBuilder.poses
+
+        previewImageView.show(poses: poses, on: currentFrame)
+    }
+}
