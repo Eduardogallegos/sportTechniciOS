@@ -9,11 +9,28 @@
 /* Begin PBXBuildFile section */
 		21DB458D247F287D007A8C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB458C247F287D007A8C4F /* AppDelegate.swift */; };
 		21DB458F247F287D007A8C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB458E247F287D007A8C4F /* SceneDelegate.swift */; };
-		21DB4591247F287D007A8C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB4590247F287D007A8C4F /* ViewController.swift */; };
+		21DB4591247F287D007A8C4F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB4590247F287D007A8C4F /* ViewController1.swift */; };
 		21DB4594247F287D007A8C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DB4592247F287D007A8C4F /* Main.storyboard */; };
 		21DB4596247F287E007A8C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DB4595247F287E007A8C4F /* Assets.xcassets */; };
 		21DB4599247F287E007A8C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DB4597247F287E007A8C4F /* LaunchScreen.storyboard */; };
 		B900C66E74E737E2F04892B4 /* Pods_SportTechnic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041289094B0D75B9DAC19E15 /* Pods_SportTechnic.framework */; };
+		E502D91E248883B400ED36E0 /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D918248883B400ED36E0 /* Joint.swift */; };
+		E502D91F248883B400ED36E0 /* PoseBuilder+Multiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D919248883B400ED36E0 /* PoseBuilder+Multiple.swift */; };
+		E502D920248883B400ED36E0 /* PoseBuilder+Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D91A248883B400ED36E0 /* PoseBuilder+Single.swift */; };
+		E502D921248883B400ED36E0 /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D91B248883B400ED36E0 /* Pose.swift */; };
+		E502D922248883B400ED36E0 /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D91C248883B400ED36E0 /* PoseBuilder.swift */; };
+		E502D923248883B400ED36E0 /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D91D248883B400ED36E0 /* PoseBuilderConfiguration.swift */; };
+		E502D929248883BF00ED36E0 /* PoseNetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D925248883BF00ED36E0 /* PoseNetOutput.swift */; };
+		E502D92A248883BF00ED36E0 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D926248883BF00ED36E0 /* PoseNet.swift */; };
+		E502D92B248883BF00ED36E0 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D927248883BF00ED36E0 /* PoseNetInput.swift */; };
+		E502D92C248883BF00ED36E0 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E502D928248883BF00ED36E0 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		E502D930248883C600ED36E0 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D92E248883C600ED36E0 /* CGPoint+Extension.swift */; };
+		E502D931248883C600ED36E0 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D92F248883C600ED36E0 /* CGImage+Extension.swift */; };
+		E502D935248883D100ED36E0 /* AVCaptureVideoOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D933248883D100ED36E0 /* AVCaptureVideoOrientation+Extension.swift */; };
+		E502D936248883D100ED36E0 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D934248883D100ED36E0 /* VideoCapture.swift */; };
+		E502D9382488841000ED36E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D9372488841000ED36E0 /* ViewController.swift */; };
+		E502D93A2488841700ED36E0 /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D9392488841700ED36E0 /* PoseImageView.swift */; };
+		E502D93C2488842000ED36E0 /* PopOverModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E502D93B2488842000ED36E0 /* PopOverModalViewController.swift */; };
 		E50CD2FE248712170015E6A0 /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD2FD248712170015E6A0 /* LOGO.png */; };
 		E50CD303248713010015E6A0 /* legs.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD2FF248712FF0015E6A0 /* legs.png */; };
 		E50CD304248713010015E6A0 /* abs.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CD300248713000015E6A0 /* abs.png */; };
@@ -36,13 +53,30 @@
 		21DB4589247F287D007A8C4F /* SportTechnic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTechnic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DB458C247F287D007A8C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DB458E247F287D007A8C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21DB4590247F287D007A8C4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21DB4590247F287D007A8C4F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		21DB4593247F287D007A8C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21DB4595247F287E007A8C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DB4598247F287E007A8C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DB459A247F287E007A8C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C026A028E69AC2D188287B2 /* Pods-SportTechnic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportTechnic.debug.xcconfig"; path = "Target Support Files/Pods-SportTechnic/Pods-SportTechnic.debug.xcconfig"; sourceTree = "<group>"; };
 		D7FF1DADC87051651830899E /* Pods-SportTechnic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportTechnic.release.xcconfig"; path = "Target Support Files/Pods-SportTechnic/Pods-SportTechnic.release.xcconfig"; sourceTree = "<group>"; };
+		E502D918248883B400ED36E0 /* Joint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		E502D919248883B400ED36E0 /* PoseBuilder+Multiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Multiple.swift"; sourceTree = "<group>"; };
+		E502D91A248883B400ED36E0 /* PoseBuilder+Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Single.swift"; sourceTree = "<group>"; };
+		E502D91B248883B400ED36E0 /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		E502D91C248883B400ED36E0 /* PoseBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
+		E502D91D248883B400ED36E0 /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
+		E502D925248883BF00ED36E0 /* PoseNetOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetOutput.swift; sourceTree = "<group>"; };
+		E502D926248883BF00ED36E0 /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		E502D927248883BF00ED36E0 /* PoseNetInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
+		E502D928248883BF00ED36E0 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
+		E502D92E248883C600ED36E0 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		E502D92F248883C600ED36E0 /* CGImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		E502D933248883D100ED36E0 /* AVCaptureVideoOrientation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Extension.swift"; sourceTree = "<group>"; };
+		E502D934248883D100ED36E0 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		E502D9372488841000ED36E0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E502D9392488841700ED36E0 /* PoseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
+		E502D93B2488842000ED36E0 /* PopOverModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverModalViewController.swift; sourceTree = "<group>"; };
 		E50CD2FD248712170015E6A0 /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO.png; sourceTree = "<group>"; };
 		E50CD2FF248712FF0015E6A0 /* legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legs.png; sourceTree = "<group>"; };
 		E50CD300248713000015E6A0 /* abs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abs.png; sourceTree = "<group>"; };
@@ -93,6 +127,10 @@
 		21DB458B247F287D007A8C4F /* SportTechnic */ = {
 			isa = PBXGroup;
 			children = (
+				E502D917248883B400ED36E0 /* Pose */,
+				E502D924248883BF00ED36E0 /* Model */,
+				E502D92D248883C600ED36E0 /* Extensions+Types */,
+				E502D932248883D100ED36E0 /* Utils */,
 				E5DD919E2488194800A259D5 /* intro.MOV */,
 				21DB458C247F287D007A8C4F /* AppDelegate.swift */,
 				21DB458E247F287D007A8C4F /* SceneDelegate.swift */,
@@ -130,11 +168,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E502D917248883B400ED36E0 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				E502D918248883B400ED36E0 /* Joint.swift */,
+				E502D919248883B400ED36E0 /* PoseBuilder+Multiple.swift */,
+				E502D91A248883B400ED36E0 /* PoseBuilder+Single.swift */,
+				E502D91B248883B400ED36E0 /* Pose.swift */,
+				E502D91C248883B400ED36E0 /* PoseBuilder.swift */,
+				E502D91D248883B400ED36E0 /* PoseBuilderConfiguration.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		E502D924248883BF00ED36E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E502D925248883BF00ED36E0 /* PoseNetOutput.swift */,
+				E502D926248883BF00ED36E0 /* PoseNet.swift */,
+				E502D927248883BF00ED36E0 /* PoseNetInput.swift */,
+				E502D928248883BF00ED36E0 /* PoseNetMobileNet075S16FP16.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E502D92D248883C600ED36E0 /* Extensions+Types */ = {
+			isa = PBXGroup;
+			children = (
+				E502D92E248883C600ED36E0 /* CGPoint+Extension.swift */,
+				E502D92F248883C600ED36E0 /* CGImage+Extension.swift */,
+			);
+			path = "Extensions+Types";
+			sourceTree = "<group>";
+		};
+		E502D932248883D100ED36E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E502D933248883D100ED36E0 /* AVCaptureVideoOrientation+Extension.swift */,
+				E502D934248883D100ED36E0 /* VideoCapture.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E5DD918B2487501C00A259D5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E502D9372488841000ED36E0 /* ViewController.swift */,
+				E502D9392488841700ED36E0 /* PoseImageView.swift */,
+				E502D93B2488842000ED36E0 /* PopOverModalViewController.swift */,
 				E50CD307248718230015E6A0 /* EjerciciosEspecificosVC.swift */,
-				21DB4590247F287D007A8C4F /* ViewController.swift */,
+				21DB4590247F287D007A8C4F /* ViewController1.swift */,
 				E5DD918E2487505100A259D5 /* LogInVC.swift */,
 				E5DD91902487505D00A259D5 /* StartVC.swift */,
 				E5DD91942487512B00A259D5 /* SingUpVC.swift */,
@@ -284,14 +367,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21DB4591247F287D007A8C4F /* ViewController.swift in Sources */,
+				E502D923248883B400ED36E0 /* PoseBuilderConfiguration.swift in Sources */,
+				E502D91F248883B400ED36E0 /* PoseBuilder+Multiple.swift in Sources */,
+				21DB4591247F287D007A8C4F /* ViewController1.swift in Sources */,
 				21DB458D247F287D007A8C4F /* AppDelegate.swift in Sources */,
+				E502D92C248883BF00ED36E0 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
+				E502D931248883C600ED36E0 /* CGImage+Extension.swift in Sources */,
+				E502D93C2488842000ED36E0 /* PopOverModalViewController.swift in Sources */,
+				E502D9382488841000ED36E0 /* ViewController.swift in Sources */,
 				E5DD91952487512B00A259D5 /* SingUpVC.swift in Sources */,
 				E5DD918F2487505100A259D5 /* LogInVC.swift in Sources */,
 				E5DD91912487505D00A259D5 /* StartVC.swift in Sources */,
+				E502D920248883B400ED36E0 /* PoseBuilder+Single.swift in Sources */,
 				E50CD308248718230015E6A0 /* EjerciciosEspecificosVC.swift in Sources */,
+				E502D92B248883BF00ED36E0 /* PoseNetInput.swift in Sources */,
+				E502D92A248883BF00ED36E0 /* PoseNet.swift in Sources */,
+				E502D93A2488841700ED36E0 /* PoseImageView.swift in Sources */,
+				E502D91E248883B400ED36E0 /* Joint.swift in Sources */,
+				E502D921248883B400ED36E0 /* Pose.swift in Sources */,
+				E502D922248883B400ED36E0 /* PoseBuilder.swift in Sources */,
+				E502D935248883D100ED36E0 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
+				E502D936248883D100ED36E0 /* VideoCapture.swift in Sources */,
 				E5DD919824875B3E00A259D5 /* Utilities.swift in Sources */,
+				E502D929248883BF00ED36E0 /* PoseNetOutput.swift in Sources */,
 				21DB458F247F287D007A8C4F /* SceneDelegate.swift in Sources */,
+				E502D930248883C600ED36E0 /* CGPoint+Extension.swift in Sources */,
 				E5DD919C2487F98B00A259D5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9R68542CP5;
+				DEVELOPMENT_TEAM = WD63UQLJ7C;
 				INFOPLIST_FILE = SportTechnic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9R68542CP5;
+				DEVELOPMENT_TEAM = WD63UQLJ7C;
 				INFOPLIST_FILE = SportTechnic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

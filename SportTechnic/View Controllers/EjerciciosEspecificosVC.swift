@@ -32,15 +32,8 @@ class EjerciciosEspecificosVC: UIViewController {
     // BTN TUROTIAL 2
     @IBOutlet weak var tutorial2: UIButton!
     
-    // BTN ABRIR CAMARA 1 Y ENTRAR GALERIA 1
-    @IBOutlet weak var BtnCamara1: UIButton!
-    
-    @IBOutlet weak var BtnGaleria1: UIButton!
-    
-    // BTN ABRIR CAMARA 2 Y ENTRAR GALERIA 2
-    @IBOutlet weak var BtnCamara2: UIButton!
-    
-    @IBOutlet weak var BtnGaleria2: UIButton!
+    // BTN ABRIR CAMARA 
+    @IBOutlet weak var btnCamara: UIButton!
     
     
     var nombreGrupo: String = ""
@@ -94,10 +87,8 @@ class EjerciciosEspecificosVC: UIViewController {
            Utilities.styleFilledButton(tutorial1)
            Utilities.styleFilledButton(tutorial2)
             
-        Utilities.styleHollowButton(BtnCamara1)
-        Utilities.styleHollowButton(BtnCamara2)
-        Utilities.styleHollowButton(BtnGaleria1)
-        Utilities.styleHollowButton(BtnGaleria2)
+        Utilities.styleHollowButton(btnCamara)
+      
        
 
               }
