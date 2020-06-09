@@ -17,20 +17,22 @@ class EjerciciosEspecificosVC: UIViewController {
     // NOMBRE EJERCICIO 1
     @IBOutlet weak var NombreEx: UILabel!
     
-    // DESCRIPCIÓN EJERCICIO 1
-    @IBOutlet weak var Descripcion: UILabel!
     
     // NOMBRE EJERCICIO 2
     @IBOutlet weak var NombreEx2: UILabel!
     
-    // DESCRIPCIÓN EJERCICIO 1
-    @IBOutlet weak var Descripcion2: UILabel!
     
     // BTN TUROTIAL 1
     @IBOutlet weak var tutorial1: UIButton!
     
     // BTN TUROTIAL 2
     @IBOutlet weak var tutorial2: UIButton!
+    
+    // IMG 1
+    @IBOutlet weak var img1: UIImageView!
+    
+    // IMG 2
+    @IBOutlet weak var img2: UIImageView!
     
     // BTN ABRIR CAMARA 
     @IBOutlet weak var btnCamara: UIButton!
@@ -46,34 +48,42 @@ class EjerciciosEspecificosVC: UIViewController {
             LabelGrupo.text = nombreGrupo
         }
         
-        // PONE NOMBRE Y DESCRIPCIÓN DE ACUERDO A CLICK
+        // PONE NOMBRE E IMAGEN DE ACUERDO A CLICK
         if nombreGrupo == "BRAZO"{
             NombreEx.text = "Lagartijas"
-            Descripcion.text = "Haz click en el tutorial y aprende"
+            let lagartija: UIImage = UIImage(named: "pushup.jpg")!
+            img1.image = lagartija
             
             NombreEx2.text = "Fondos"
-            Descripcion2.text = "Haz click en el tutorial y aprende"
+            let fondos: UIImage = UIImage(named: "dips.jpg")!
+            img2.image = fondos
 
         }else if nombreGrupo == "PIERNA"{
             NombreEx.text = "Sentadilla"
-            Descripcion.text = "Haz click en el tutorial y aprende"
+            let sentadilla: UIImage = UIImage(named: "squat.jpg")!
+            img1.image = sentadilla
             
             NombreEx2.text = "Desplantes"
-            Descripcion2.text = "Haz click en el tutorial y aprende"
+            let desplantes: UIImage = UIImage(named: "halfsquat.jpg")!
+            img2.image = desplantes
             
         }else if nombreGrupo == "ABDOMEN"{
-        NombreEx.text = "Abdominales"
-        Descripcion.text = "Haz click en el tutorial y aprende"
+            NombreEx.text = "Abdominales"
+            let abdominles: UIImage = UIImage(named: "situp.jpg")!
+            img1.image = abdominles
         
-        NombreEx2.text = "Planchas"
-        Descripcion2.text = "Haz click en el tutorial y aprende"
+            NombreEx2.text = "Planchas"
+            let planchs: UIImage = UIImage(named: "planks.jpg")!
+            img2.image = planchs
             
         }else if nombreGrupo == "CARDIO"{
             NombreEx.text = "Burpees"
-            Descripcion.text = "Haz click en el tutorial y aprende"
-            
+            let burpee: UIImage = UIImage(named: "burpee.png")!
+            img1.image = burpee
+           
             NombreEx2.text = "Saltos de Cuerda"
-            Descripcion2.text = "Haz click en el tutorial y aprende"
+            let saltos: UIImage = UIImage(named: "rope_jump.jpg")!
+            img2.image = saltos
         }
         
      

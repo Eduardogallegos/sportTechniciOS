@@ -97,7 +97,7 @@ class SingUpVC: UIViewController {
                 }else{
                     // SE CREO CORRECTAMENTE
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["Nombre:": nombre,
+                    db.collection("users").addDocument(data: ["Nombre": nombre,
                                                               "Apellido": apellido,
                                                               "uid": result!.user.uid ]) { (error) in
                                                                 if error != nil{
@@ -126,9 +126,9 @@ class SingUpVC: UIViewController {
     }
     
     func transitionToMenu() {
-        let menuVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.MenuViewControler) as? ViewController1
+        let homeVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.MenuViewControler) as? HomeVC
         
-        view.window?.rootViewController = menuVC
+        view.window?.rootViewController = homeVC
         view.window?.makeKeyAndVisible()
         
     }

@@ -12,6 +12,6 @@ struct Constants {
     
     struct Storyboard  {
         
-        static let MenuViewControler = "MenuVC"
+        static let MenuViewControler = "HomeVC"
     }
 }

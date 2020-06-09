@@ -57,9 +57,9 @@ class LogInVC: UIViewController {
                 self.ErrorLabel.alpha = 1
                 
             }else {
-                let menuVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.MenuViewControler) as? ViewController1
+                let homeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.MenuViewControler) as? HomeVC
                        
-                self.view.window?.rootViewController = menuVC
+                self.view.window?.rootViewController = homeVC
                 self.view.window?.makeKeyAndVisible()
                 
             }
