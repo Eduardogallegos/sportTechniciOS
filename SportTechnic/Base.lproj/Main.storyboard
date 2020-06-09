@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ymm-rk-b2P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ymm-rk-b2P">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -100,38 +100,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="st_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-mO-dvk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="137"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nR-N3-QNs">
-                                <rect key="frame" x="75" y="443" width="120" height="120"/>
+                                <rect key="frame" x="69" y="324" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="profile_btn.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-1f-ikG">
-                                <rect key="frame" x="75" y="571" width="120" height="120"/>
+                                <rect key="frame" x="69" y="477" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="health_btn.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd3-O4-8mb">
-                                <rect key="frame" x="217" y="571" width="120" height="120"/>
+                                <rect key="frame" x="211" y="477" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="time_btn.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzU-wC-A9A">
-                                <rect key="frame" x="217" y="443" width="120" height="120"/>
+                                <rect key="frame" x="211" y="324" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="train_btn.png"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="eoS-l3-Oey"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="st_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-mO-dvk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="184"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Le1-mO-dvk" firstAttribute="top" secondItem="Csu-mR-OlM" secondAttribute="top" id="0OJ-MP-vvT"/>
-                            <constraint firstItem="Le1-mO-dvk" firstAttribute="leading" secondItem="Csu-mR-OlM" secondAttribute="leading" id="2Hd-eX-yDt"/>
-                            <constraint firstItem="Le1-mO-dvk" firstAttribute="trailing" secondItem="Csu-mR-OlM" secondAttribute="trailing" id="iQb-7h-0mV"/>
+                            <constraint firstItem="Le1-mO-dvk" firstAttribute="top" secondItem="FTn-us-71M" secondAttribute="top" id="JEw-VX-ymC"/>
+                            <constraint firstItem="Le1-mO-dvk" firstAttribute="leading" secondItem="Csu-mR-OlM" secondAttribute="leading" id="gNr-ra-23U"/>
+                            <constraint firstItem="Le1-mO-dvk" firstAttribute="trailing" secondItem="Csu-mR-OlM" secondAttribute="trailing" id="rWa-dp-hHV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Csu-mR-OlM"/>
                     </view>
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoT-4i-GE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3747.826086956522" y="-601.33928571428567"/>
+            <point key="canvasLocation" x="1924.6376811594205" y="127.90178571428571"/>
         </scene>
         <!--StartVC-->
         <scene sceneID="Idp-Aq-xxq">
@@ -149,10 +149,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-eN-N78">
-                                <rect key="frame" x="0.0" y="90" width="414" height="806"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ucM-Pb-ieM">
                                 <rect key="frame" x="40" y="800.5" width="334" height="101.5"/>
                                 <subviews>
@@ -181,17 +177,20 @@
                                     <constraint firstItem="tSb-HO-e9B" firstAttribute="height" secondItem="27j-cZ-Fhn" secondAttribute="height" multiplier="0.75" id="lca-d4-nXw"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-eN-N78">
+                                <rect key="frame" x="-15" y="-20" width="374" height="686"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ERx-eN-N78" firstAttribute="top" secondItem="iXT-t8-PpH" secondAttribute="top" constant="-50" id="1TT-6Z-4qH"/>
-                            <constraint firstItem="ERx-eN-N78" firstAttribute="trailing" secondItem="iXT-t8-PpH" secondAttribute="trailing" id="O3G-Sj-SP0"/>
+                            <constraint firstItem="ERx-eN-N78" firstAttribute="centerX" secondItem="iXT-t8-PpH" secondAttribute="centerX" id="Nvc-c3-xbc"/>
                             <constraint firstItem="ucM-Pb-ieM" firstAttribute="leading" secondItem="iXT-t8-PpH" secondAttribute="leading" constant="40" id="QOh-i4-Lfx"/>
-                            <constraint firstItem="ERx-eN-N78" firstAttribute="leading" secondItem="iXT-t8-PpH" secondAttribute="leading" id="UkR-Xl-OoL"/>
+                            <constraint firstItem="ERx-eN-N78" firstAttribute="leading" secondItem="iXT-t8-PpH" secondAttribute="leading" constant="20" id="TNr-OL-fBj"/>
                             <constraint firstAttribute="bottom" secondItem="ucM-Pb-ieM" secondAttribute="bottom" constant="40" id="dN3-mp-pvf"/>
                             <constraint firstItem="iXT-t8-PpH" firstAttribute="trailing" secondItem="ucM-Pb-ieM" secondAttribute="trailing" constant="40" id="ka3-nS-PRQ"/>
-                            <constraint firstAttribute="bottom" secondItem="ERx-eN-N78" secondAttribute="bottom" id="ry1-el-ZmU"/>
                             <constraint firstItem="ucM-Pb-ieM" firstAttribute="bottom" secondItem="iXT-t8-PpH" secondAttribute="bottom" constant="40" id="tec-Wc-0Qs"/>
+                            <constraint firstItem="iXT-t8-PpH" firstAttribute="trailing" secondItem="ERx-eN-N78" secondAttribute="trailing" constant="20" id="uLJ-R4-2oM"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ucM-Pb-ieM" secondAttribute="bottom" constant="40" id="yYA-No-wdr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iXT-t8-PpH"/>
@@ -345,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4600" y="-601.33928571428567"/>
+            <point key="canvasLocation" x="2690" y="128"/>
         </scene>
         <!--Ejercicios EspecificosVC-->
         <scene sceneID="WjP-uw-7S7">
@@ -485,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDv-0O-sVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5423.188405797102" y="-601.33928571428567"/>
+            <point key="canvasLocation" x="3496" y="128"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DqT-rS-TTL">
@@ -509,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1e-se-a5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6281.1594202898559" y="-601.33928571428567"/>
+            <point key="canvasLocation" x="4254" y="155"/>
         </scene>
         <!--Item-->
         <scene sceneID="p3l-F8-NLo">
