@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController1: UIViewController {
+class EjerciciosGrupo: UIViewController {
 
     @IBOutlet weak var tabla: UITableView!
     
@@ -33,7 +33,7 @@ class ViewController1: UIViewController {
 }
 
         // Extension
-    extension ViewController1: UITableViewDelegate, UITableViewDataSource{
+    extension EjerciciosGrupo: UITableViewDelegate, UITableViewDataSource{
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return arrImgGrupos.count
         }
