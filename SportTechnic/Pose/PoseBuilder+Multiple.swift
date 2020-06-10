@@ -1,7 +1,4 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
 The implementation of a multiple-person pose estimation algorithm, based on the TensorFlow
  project "Pose Detection in the Browser."
 */

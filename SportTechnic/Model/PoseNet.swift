@@ -1,7 +1,4 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
 Implementation details of a facade to interact with the PoseNet model, includes input
  preprocessing and calling the model's prediction function.
 */

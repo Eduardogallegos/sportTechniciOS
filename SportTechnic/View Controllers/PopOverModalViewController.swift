@@ -1,7 +1,4 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
 Implementation details for the PopOverPresentationManager and
  PopOverPresentationController classes, both used to present the ConfigurationViewController's
  view to the user.

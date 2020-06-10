@@ -110,7 +110,7 @@ class EjerciciosEspecificosVC: UIViewController {
     
     if nombreGrupo == "BRAZO"{
         
-        if let path = Bundle.main.path(forResource: "lagartija_lateral", ofType: ".MOV"){
+        if let path = Bundle.main.path(forResource: "Lagartija", ofType: ".mp4"){
         let video = AVPlayer(url: URL(fileURLWithPath: path))
         let videoPlayer = AVPlayerViewController()
         videoPlayer.player = video
@@ -122,7 +122,7 @@ class EjerciciosEspecificosVC: UIViewController {
     }
         }else if nombreGrupo == "PIERNA"{
             
-            if let path = Bundle.main.path(forResource: "sent_2", ofType: ".MOV"){
+            if let path = Bundle.main.path(forResource: "Sentadilla", ofType: ".mp4"){
                 let video = AVPlayer(url: URL(fileURLWithPath: path))
                 let videoPlayer = AVPlayerViewController()
                 videoPlayer.player = video
@@ -135,7 +135,7 @@ class EjerciciosEspecificosVC: UIViewController {
             
         }else if nombreGrupo == "ABDOMEN"{
             
-            if let path = Bundle.main.path(forResource: "sent_2", ofType: ".MOV"){
+            if let path = Bundle.main.path(forResource: "Abdominales", ofType: ".mp4"){
                 let video = AVPlayer(url: URL(fileURLWithPath: path))
                 let videoPlayer = AVPlayerViewController()
                 videoPlayer.player = video
@@ -148,7 +148,7 @@ class EjerciciosEspecificosVC: UIViewController {
             
         }else if nombreGrupo == "CARDIO"{
             
-            if let path = Bundle.main.path(forResource: "sent_2", ofType: ".MOV"){
+            if let path = Bundle.main.path(forResource: "Burpee", ofType: ".mp4"){
                 let video = AVPlayer(url: URL(fileURLWithPath: path))
                 let videoPlayer = AVPlayerViewController()
                 videoPlayer.player = video
@@ -168,7 +168,7 @@ class EjerciciosEspecificosVC: UIViewController {
     
         if nombreGrupo == "BRAZO"{
                
-               if let path = Bundle.main.path(forResource: "lagartija_lateral", ofType: ".MOV"){
+               if let path = Bundle.main.path(forResource: "Fondos", ofType: ".mp4"){
                let video = AVPlayer(url: URL(fileURLWithPath: path))
                let videoPlayer = AVPlayerViewController()
                videoPlayer.player = video
@@ -180,7 +180,7 @@ class EjerciciosEspecificosVC: UIViewController {
            }
                }else if nombreGrupo == "PIERNA"{
                    
-                   if let path = Bundle.main.path(forResource: "sent_2", ofType: ".MOV"){
+                   if let path = Bundle.main.path(forResource: "Desplante", ofType: ".mp4"){
                        let video = AVPlayer(url: URL(fileURLWithPath: path))
                        let videoPlayer = AVPlayerViewController()
                        videoPlayer.player = video
@@ -193,7 +193,7 @@ class EjerciciosEspecificosVC: UIViewController {
                    
                }else if nombreGrupo == "ABDOMEN"{
                    
-                   if let path = Bundle.main.path(forResource: "sent_2", ofType: ".MOV"){
+                   if let path = Bundle.main.path(forResource: "Plancha", ofType: ".mp4"){
                        let video = AVPlayer(url: URL(fileURLWithPath: path))
                        let videoPlayer = AVPlayerViewController()
                        videoPlayer.player = video
@@ -206,7 +206,7 @@ class EjerciciosEspecificosVC: UIViewController {
                    
                }else if nombreGrupo == "CARDIO"{
                    
-                   if let path = Bundle.main.path(forResource: "sent_2", ofType: ".MOV"){
+                   if let path = Bundle.main.path(forResource: "Salto", ofType: ".mp4"){
                        let video = AVPlayer(url: URL(fileURLWithPath: path))
                        let videoPlayer = AVPlayerViewController()
                        videoPlayer.player = video

@@ -44,7 +44,7 @@ class StartVC: UIViewController {
         let newLayer = AVPlayerLayer(player: player)
         newLayer.frame = self.VideoView.frame
         self.VideoView.layer.addSublayer(newLayer)
-        newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        //newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
        
         
