@@ -1,7 +1,4 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
 Implementation details of a structure to hold the PoseNet model's outputs.
 */
 

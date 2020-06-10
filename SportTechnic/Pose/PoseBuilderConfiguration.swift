@@ -1,7 +1,4 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
 The implementation details of a structure that hold the parameters algorithms use for
  estimating poses.
 */
