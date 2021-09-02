@@ -61,5 +61,5 @@ Thanks to professor [Roberto Martínez Román](https://github.com/rmroman) for b
 Feel free to contact us!
 - [Eduardo](mailto:egallegossolis@gmail.com)
 - [Pedro](mailto:pedro_corsob@outlook.com)
-- [Francisco](mailto:javier_z_t@hotmail.com)
+- [Javier](mailto:javier_z_t@hotmail.com)
 - [Leonardo](mailto:l.castillejos@hotmail.com)
